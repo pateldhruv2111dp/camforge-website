@@ -80,7 +80,15 @@ export default function ServicesSection() {
                   </h3>
                 </div>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  {service.description}
+                  {service.description.includes('CAD/CAM') ? (
+                    <>
+                      {service.description.split('CAD/CAM')[0]}
+                      <span className="text-primary">CAD/CAM</span>
+                      {service.description.split('CAD/CAM')[1]}
+                    </>
+                  ) : (
+                    service.description
+                  )}
                 </p>
                 <ul className="space-y-3 text-gray-600">
                   {service.features.map((feature, featureIndex) => (
