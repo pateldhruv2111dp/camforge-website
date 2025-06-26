@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Linkedin, Twitter, Facebook } from "lucide-react";
-import logoImage from "@assets/6f1df9f1-721f-42b2-a6f3-7f216aa42081_1750940404709.jpg";
+import logoImage from "@assets/6f1df9f1-721f-42b2-a6f3-7f216aa42081-removebg-preview_1750940759782.png";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -35,7 +35,7 @@ export default function Footer() {
             <img
               src={logoImage}
               alt="Camforge Technologies"
-              className="h-8 w-auto mb-4"
+              className="h-10 w-auto mb-4"
             />
             <p className="text-gray-400 mb-6 leading-relaxed">
               Leading provider of CAD CAM solutions, programming services, and
