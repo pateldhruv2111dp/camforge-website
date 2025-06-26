@@ -65,8 +65,8 @@ export default function TrainingSection() {
                 className="w-full h-48 object-cover"
               />
             </div>
-            <CardContent className="p-8">
-              <div className="flex items-center mb-6">
+            <CardContent className="p-6">
+              <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mr-4">
                   <Wrench className="w-6 h-6 text-primary" />
                 </div>
@@ -102,8 +102,8 @@ export default function TrainingSection() {
                 className="w-full h-48 object-cover"
               />
             </div>
-            <CardContent className="p-8">
-              <div className="flex items-center mb-6">
+            <CardContent className="p-6">
+              <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center mr-4">
                   <Palette className="w-6 h-6 text-secondary" />
                 </div>

@@ -16,7 +16,7 @@ export default function AuthorizedReseller() {
         <Card className="animate-slide-up">
           <CardContent className="p-6">
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="text-center p-6 bg-gradient-to-br from-primary/5 to-primary/10 rounded-xl">
+              <div className="text-center p-4 bg-gradient-to-br from-primary/5 to-primary/10 rounded-xl">
                 <div className="flex items-center justify-center mx-auto mb-4">
                   <img 
                     src={mastercamLogo} 
@@ -37,7 +37,7 @@ export default function AuthorizedReseller() {
                 </div>
               </div>
 
-              <div className="text-center p-6 bg-gradient-to-br from-secondary/5 to-secondary/10 rounded-xl">
+              <div className="text-center p-4 bg-gradient-to-br from-secondary/5 to-secondary/10 rounded-xl">
                 <div className="flex items-center justify-center mx-auto mb-4">
                   <img 
                     src={carvecoLogo} 

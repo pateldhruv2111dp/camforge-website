@@ -50,7 +50,7 @@ export default function CompanyOverview() {
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <CardContent className="p-8">
+              <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mr-4">
                     <feature.icon className="w-6 h-6 text-primary" />
