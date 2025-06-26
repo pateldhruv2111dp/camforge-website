@@ -154,10 +154,18 @@ export default function ContactForm() {
                     <FormLabel className="text-white">Phone</FormLabel>
                     <FormControl>
                       <Input
-                        placeholder="+91 9825060415"
+                        placeholder="10 Digit Mobile Number"
+                        type="tel"
+                        pattern="[0-9]{10}"
+                        maxLength={10}
                         className="bg-white/20 border-white/30 text-white placeholder:text-gray-300"
                         {...field}
                         value={field.value || ""}
+                        onChange={(e) => {
+                          // Only allow digits and limit to 10 characters
+                          const value = e.target.value.replace(/\D/g, '').slice(0, 10);
+                          field.onChange(value);
+                        }}
                       />
                     </FormControl>
                     <FormMessage className="text-red-300" />

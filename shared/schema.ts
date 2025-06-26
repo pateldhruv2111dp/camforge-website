@@ -33,6 +33,8 @@ export const insertContactInquirySchema = createInsertSchema(contactInquiries).p
   subject: true,
   message: true,
   serviceInterest: true,
+}).extend({
+  phone: z.string().regex(/^\d{10}$/, "Phone number must be exactly 10 digits"),
 });
 
 export type InsertUser = z.infer<typeof insertUserSchema>;
