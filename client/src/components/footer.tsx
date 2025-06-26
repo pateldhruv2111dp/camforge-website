@@ -35,7 +35,7 @@ export default function Footer() {
             <img
               src={logoImage}
               alt="Camforge Technologies"
-              className="h-15 w-auto mb-4"
+              className="h-10 w-auto mb-4"
             />
             <p className="text-gray-400 mb-6 leading-relaxed">
               Leading provider of <span className="text-primary">CAD/CAM</span> solutions, programming services, and
