@@ -12,7 +12,7 @@ export default function CompanyOverview() {
       icon: GraduationCap,
       title: "Authorized Training",
       description:
-        "Official MASTERCAM and CARVECO (ARTCAM) training programs with certified instructors and comprehensive curriculum.",
+        "Official MASTERCAM and CARVECO (ArtCAM) training programs with certified instructors and comprehensive curriculum.",
     },
     {
       icon: Handshake,

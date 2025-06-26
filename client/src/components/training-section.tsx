@@ -107,7 +107,7 @@ export default function TrainingSection() {
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-secondary">
-                    <strong>CARVECO (ART<span className="text-primary">CAM</span>)</strong> Training
+                    <strong>CARVECO (ArtCAM)</strong> Training
                   </h3>
                   <p className="text-gray-500">Design & Machining Solutions</p>
                 </div>
