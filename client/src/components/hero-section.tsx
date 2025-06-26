@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone } from "lucide-react";
+import heroBackgroundImage from "@assets/79b20d9a-ebc6-4315-a09a-600b385ceeb7_1750943385982.png";
 
 export default function HeroSection() {
   const scrollToSection = (sectionId: string) => {
@@ -12,11 +13,17 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center bg-gradient-to-br from-secondary via-blue-900 to-secondary"
+      className="relative min-h-screen flex items-center"
+      style={{
+        backgroundImage: `url(${heroBackgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
     >
       {/* Background overlay */}
-      <div className="absolute inset-0 bg-black/40"></div>
-      <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 to-transparent"></div>
+      <div className="absolute inset-0 bg-black/60"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-secondary/80 to-transparent"></div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex justify-center items-center min-h-screen">
         <div className="max-w-4xl animate-fade-in text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
