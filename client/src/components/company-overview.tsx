@@ -46,7 +46,7 @@ export default function CompanyOverview() {
               <p className="text-gray-600 leading-relaxed">
                 {feature.title === "Authorized Training" ? (
                   <>
-                    Official <strong>MASTERCAM</strong> and <strong>CARVECO (ART<span className="text-primary">CAM</span>)</strong> training programs with certified instructors and comprehensive curriculum.
+                    Official <strong>MASTER<span className="text-primary">CAM</span></strong> and <strong>CARVECO (ArtCAM)</strong> training programs with certified instructors and comprehensive curriculum.
                   </>
                 ) : (
                   feature.description
