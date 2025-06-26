@@ -41,29 +41,7 @@ export default function Footer() {
               Leading provider of <span className="text-primary">CAD/CAM</span> solutions, programming services, and
               authorized training programs for modern manufacturing industries.
             </p>
-            <div className="flex space-x-4">
-              <Button
-                variant="ghost"
-                size="icon"
-                className="w-10 h-10 bg-gray-800 rounded-full hover:bg-primary transition-colors duration-200"
-              >
-                <Linkedin className="w-5 h-5" />
-              </Button>
-              <Button
-                variant="ghost"
-                size="icon"
-                className="w-10 h-10 bg-gray-800 rounded-full hover:bg-primary transition-colors duration-200"
-              >
-                <Twitter className="w-5 h-5" />
-              </Button>
-              <Button
-                variant="ghost"
-                size="icon"
-                className="w-10 h-10 bg-gray-800 rounded-full hover:bg-primary transition-colors duration-200"
-              >
-                <Facebook className="w-5 h-5" />
-              </Button>
-            </div>
+            
           </div>
 
           {/* Quick Links */}

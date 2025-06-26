@@ -42,7 +42,7 @@ export default function ContactSection() {
   ];
 
   return (
-    <section id="contact" className="py-12 bg-secondary">
+    <section id="contact" className="py-12 bg-[#020036]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 animate-slide-up">
           <h2 className="text-4xl font-bold text-white mb-4">Get in Touch</h2>
