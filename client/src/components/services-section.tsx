@@ -4,6 +4,19 @@ import { Cpu, Compass, Users, Check } from "lucide-react";
 export default function ServicesSection() {
   const services = [
     {
+      icon: Users,
+      title: "CAD/<span className='text-primary'>CAM</span> Corporate Training",
+      description:
+        "Comprehensive training programs designed to enhance your team's CAD/CAM skills and productivity.",
+      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=300",
+      features: [
+        "Online Training Programs",
+        "Offline Classroom Training",
+        "Customized Curriculum",
+        "Certification Programs",
+      ],
+    },
+    {
       icon: Cpu,
       title: "CAM Programming Services",
       description:
@@ -27,19 +40,6 @@ export default function ServicesSection() {
         "Technical Drawings",
         "Product Development",
         "Design Optimization",
-      ],
-    },
-    {
-      icon: Users,
-      title: "CAD/<span className='text-primary'>CAM</span> Corporate Training",
-      description:
-        "Comprehensive training programs designed to enhance your team's CAD/CAM skills and productivity.",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=300",
-      features: [
-        "Online Training Programs",
-        "Offline Classroom Training",
-        "Customized Curriculum",
-        "Certification Programs",
       ],
     },
   ];
