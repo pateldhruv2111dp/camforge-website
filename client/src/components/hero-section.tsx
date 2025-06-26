@@ -17,11 +17,10 @@ export default function HeroSection() {
       {/* Background overlay */}
       <div className="absolute inset-0 bg-black/40"></div>
       <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 to-transparent"></div>
-
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl animate-fade-in">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            Precision <span className="text-primary">CAD CAM</span> Solutions &
+            Precision <span className="text-primary">CAD/CAM</span> Solutions &
             Training
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed">
