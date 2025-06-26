@@ -29,12 +29,7 @@ export default function CompanyOverview() {
           <h2 className="text-4xl font-bold text-secondary mb-6">
             Leading CAD CAM Excellence
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Camforge Technologies specializes in advanced CAD CAM solutions,
-            providing comprehensive programming services, authorized training
-            programs, and cutting-edge technology solutions for modern
-            manufacturing industries.
-          </p>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">Camforge Technologies specializes in advanced CAD/CAM solutions, providing comprehensive programming services, authorized training programs, and cutting-edge technology solutions for modern manufacturing industries.</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
