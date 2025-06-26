@@ -72,7 +72,7 @@ export default function ContactSection() {
                     {item.content}
                   </a>
                 ) : (
-                  <address className="text-primary hover:text-red-300 transition-colors duration-200 not-italic leading-relaxed">
+                  <address className="text-primary hover:text-red-300 transition-colors duration-200 not-italic text-[17px] font-semibold">
                     {item.content}
                   </address>
                 )}
