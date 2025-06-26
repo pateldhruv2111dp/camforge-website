@@ -4,7 +4,7 @@ export default function CompanyOverview() {
   const features = [
     {
       icon: Settings,
-      title: "Advanced Programming",
+      title: "Advanced Programming Services",
       description:
         "3-5 Axis milling, turning, and mill-turn programming with precision and efficiency for complex manufacturing requirements.",
     },
