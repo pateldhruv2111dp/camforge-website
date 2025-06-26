@@ -52,21 +52,21 @@ export default function ContactSection() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
+        <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
           {contactInfo.map((item, index) => (
             <Card
               key={index}
               className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-all duration-300 animate-slide-up"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
-              <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+              <CardContent className="p-6 text-center">
+                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
                   <item.icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4">
+                <h3 className="text-xl font-bold text-white mb-3">
                   {item.title}
                 </h3>
-                <p className="text-gray-300 mb-4">{item.subtitle}</p>
+                <p className="text-gray-300 mb-3">{item.subtitle}</p>
                 {item.href ? (
                   <a
                     href={item.href}
@@ -85,7 +85,7 @@ export default function ContactSection() {
         </div>
 
         {/* Contact Form */}
-        <div className="mb-16 animate-slide-up">
+        <div className="mb-12 animate-slide-up">
           <ContactForm />
         </div>
 

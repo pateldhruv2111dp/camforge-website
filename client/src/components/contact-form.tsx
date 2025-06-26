@@ -76,7 +76,7 @@ export default function ContactForm() {
   if (isSubmitted) {
     return (
       <Card className="bg-white/10 backdrop-blur-sm border-white/20 max-w-2xl mx-auto">
-        <CardContent className="p-8 text-center">
+        <CardContent className="p-6 text-center">
           <CheckCircle className="w-16 h-16 text-green-400 mx-auto mb-4" />
           <h3 className="text-2xl font-bold text-white mb-4">
             Thank You for Your Inquiry!
@@ -104,7 +104,7 @@ export default function ContactForm() {
           Send Us a Message
         </CardTitle>
       </CardHeader>
-      <CardContent className="p-8">
+      <CardContent className="p-6">
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
             <div className="grid md:grid-cols-2 gap-4">

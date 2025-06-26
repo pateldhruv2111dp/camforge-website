@@ -19,26 +19,26 @@ export default function FounderSection() {
 
           <Card className="animate-slide-up">
             <CardContent className="p-6 lg:p-8">
-              <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="grid lg:grid-cols-2 gap-8 items-center">
                 <div className="text-center lg:text-left">
                   <img
                     src={_4ed1eda4_b81a_4a7a_867e_dfaff7c321d4}
                     alt="Mr. Dhruv Patel - Founder"
-                    className="w-64 h-64 rounded-full mx-auto lg:mx-0 mb-6 object-cover shadow-lg"
+                    className="w-64 h-64 rounded-full mx-auto lg:mx-0 mb-4 object-cover shadow-lg"
                   />
 
                   <div className="lg:hidden">
                     <h3 className="text-3xl font-bold text-secondary mb-2">
                       Mr. Dhruv Patel
                     </h3>
-                    <p className="text-primary font-semibold text-lg mb-6">
+                    <p className="text-primary font-semibold text-lg mb-4">
                       Founder & CEO
                     </p>
                   </div>
                 </div>
 
                 <div>
-                  <div className="hidden lg:block mb-6">
+                  <div className="hidden lg:block mb-4">
                     <h3 className="text-3xl font-bold text-secondary mb-2">
                       Mr. Dhruv Patel
                     </h3>
