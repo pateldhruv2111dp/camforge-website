@@ -71,7 +71,7 @@ export default function TrainingSection() {
                   <IdCard className="w-8 h-8 text-primary" />
                 </div>
                 <h4 className="text-xl font-bold text-secondary mb-2">
-                  Mastercam
+                  <strong>MASTER<span className="text-primary">CAM</span></strong>
                 </h4>
                 <p className="text-gray-600 mb-4">
                   Educational and Industrial Reseller
@@ -88,7 +88,7 @@ export default function TrainingSection() {
                   <Award className="w-8 h-8 text-secondary" />
                 </div>
                 <h4 className="text-xl font-bold text-secondary mb-2">
-                  Carveco
+                  <strong>CARVECO (ART<span className="text-primary">CAM</span>)</strong>
                 </h4>
                 <p className="text-gray-600 mb-4">
                   Educational and Industrial Reseller
@@ -158,7 +158,7 @@ export default function TrainingSection() {
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-secondary">
-                    Carveco Training
+                    <strong>CARVECO (ART<span className="text-primary">CAM</span>)</strong> Training
                   </h3>
                   <p className="text-gray-500">Design & Machining Solutions</p>
                 </div>

@@ -38,7 +38,7 @@ export default function HeroSection() {
             </div>
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed">
-            Empowering industries with cutting-edge CAD CAM programming services,
+            Empowering industries with cutting-edge CAD/<span className="text-primary">CAM</span> programming services,
             authorized training, and comprehensive solutions for modern
             manufacturing.
           </p>
