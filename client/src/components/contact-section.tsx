@@ -92,11 +92,11 @@ export default function ContactSection() {
         {/* Call to Action */}
         <div className="text-center animate-slide-up">
           <Card className="bg-white/10 backdrop-blur-sm border-white/20 max-w-2xl mx-auto">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-bold text-white mb-4">
+            <CardContent className="p-6">
+              <h3 className="text-2xl font-bold text-white mb-3">
                 Prefer Direct Contact?
               </h3>
-              <p className="text-gray-300 mb-6">
+              <p className="text-gray-300 mb-4">
                 You can also reach us directly through phone or email for
                 immediate assistance with your <span className="text-primary">CAD/CAM</span> requirements.
               </p>
