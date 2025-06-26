@@ -1,5 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Cpu, Compass, Users, Check } from "lucide-react";
+import corporateTrainingImage from "@assets/mcmaster-continuing-education_CorporateTraining_1200x628_1750951612043.jpg";
+import camProgrammingImage from "@assets/workstation-cam-software_1750951717860.webp";
+import cadServicesImage from "@assets/Computer-Aided-Design_1750951801368.jpg";
 
 export default function ServicesSection() {
   const services = [
@@ -8,7 +11,7 @@ export default function ServicesSection() {
       title: '<span class="text-primary">CAD/CAM</span> Corporate Training',
       description:
         "Comprehensive training programs designed to enhance your team's CAD/CAM skills and productivity.",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=300",
+      image: corporateTrainingImage,
       features: [
         "Online Training Programs",
         "Offline Classroom Training",
@@ -21,7 +24,7 @@ export default function ServicesSection() {
       title: "CAM Programming Services",
       description:
         "Expert programming solutions for complex manufacturing requirements with precision and efficiency.",
-      image: "https://images.unsplash.com/photo-1565191999001-551c187427bb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=300",
+      image: camProgrammingImage,
       features: [
         "3 Axis to 5 Axis Milling",
         "Turning & Turn-Mill Operations",
@@ -34,7 +37,7 @@ export default function ServicesSection() {
       title: "CAD Services",
       description:
         "Professional CAD design and drafting services for product development and manufacturing documentation.",
-      image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=300",
+      image: cadServicesImage,
       features: [
         "3D Modeling & Design",
         "Technical Drawings",
