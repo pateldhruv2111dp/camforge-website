@@ -43,9 +43,11 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-secondary">
-              Camforge <span className="text-primary">Technologies</span>
-            </h1>
+            <img
+              src="@assets/6f1df9f1-721f-42b2-a6f3-7f216aa42081_1750940404709.jpg"
+              alt="Camforge Technologies"
+              className="h-10 w-auto transition-all duration-300 hover:scale-105"
+            />
           </div>
 
           {/* Desktop Navigation */}

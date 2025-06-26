@@ -31,9 +31,11 @@ export default function Footer() {
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <h3 className="text-2xl font-bold mb-4">
-              Camforge <span className="text-primary">Technologies</span>
-            </h3>
+            <img
+              src="@assets/6f1df9f1-721f-42b2-a6f3-7f216aa42081_1750940404709.jpg"
+              alt="Camforge Technologies"
+              className="h-8 w-auto mb-4"
+            />
             <p className="text-gray-400 mb-6 leading-relaxed">
               Leading provider of CAD CAM solutions, programming services, and
               authorized training programs for modern manufacturing industries.
