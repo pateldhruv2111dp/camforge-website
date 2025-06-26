@@ -6,9 +6,7 @@ export default function AuthorizedReseller() {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-slide-up">
-          <h2 className="text-4xl font-bold text-secondary mb-6">
-            Authorized Reseller
-          </h2>
+          <h2 className="text-4xl font-bold text-secondary mb-6">Authorized Partner</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Official distributor for leading CAD/<span className="text-primary">CAM</span> software solutions
           </p>

@@ -43,15 +43,7 @@ export default function TrainingSection() {
   return (
     <section id="training" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 animate-slide-up">
-          <h2 className="text-4xl font-bold text-secondary mb-6">
-            Authorized Reseller & Training
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Official partnerships with industry-leading software providers,
-            offering authorized training and reseller services
-          </p>
-        </div>
+        
 
 
 
