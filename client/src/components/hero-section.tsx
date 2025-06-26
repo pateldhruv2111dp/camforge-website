@@ -55,7 +55,7 @@ export default function HeroSection() {
               size="lg"
               variant="outline"
               onClick={() => scrollToSection("contact")}
-              className="border-2 border-white text-white hover:bg-white hover:text-secondary transition-all duration-300 font-semibold text-lg"
+              className="border-2 border-white bg-white text-secondary hover:bg-gray-100 hover:text-secondary transition-all duration-300 font-semibold text-lg"
             >
               Get in Touch
               <Phone className="ml-2 h-5 w-5" />
