@@ -83,7 +83,7 @@ export default function ContactForm() {
           </h3>
           <p className="text-gray-300 mb-6">
             We've received your message and will respond within 24 hours. 
-            Our team is excited to help you with your CAD CAM requirements.
+            Our team is excited to help you with your <span className="text-primary">CAD/CAM</span> requirements.
           </p>
           <Button
             onClick={() => setIsSubmitted(false)}

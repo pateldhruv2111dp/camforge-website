@@ -13,7 +13,7 @@ export default function FounderSection() {
               Meet Our Founder
             </h2>
             <p className="text-xl text-gray-600">
-              Leadership driving innovation in CAD CAM technology
+              Leadership driving innovation in <span className="text-primary">CAD/CAM</span> technology
             </p>
           </div>
 
@@ -54,7 +54,7 @@ export default function FounderSection() {
                       and training. With extensive experience in manufacturing
                       technology and a passion for innovation, Mr. Patel has
                       established the company as a trusted partner for
-                      industries seeking advanced CAD CAM solutions.
+                      industries seeking advanced <span className="text-primary">CAD/CAM</span> solutions.
                     </p>
 
                     <p className="mb-6 leading-relaxed">

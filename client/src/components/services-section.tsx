@@ -52,7 +52,7 @@ export default function ServicesSection() {
             Our Services
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Comprehensive CAD CAM solutions tailored to meet your manufacturing
+            Comprehensive <span className="text-primary">CAD/CAM</span> solutions tailored to meet your manufacturing
             and design requirements
           </p>
         </div>

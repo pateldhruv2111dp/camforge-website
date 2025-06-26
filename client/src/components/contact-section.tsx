@@ -44,7 +44,7 @@ export default function ContactSection() {
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="text-4xl font-bold text-white mb-6">Get in Touch</h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Ready to advance your CAD CAM capabilities? Contact us for
+            Ready to advance your <span className="text-primary">CAD/CAM</span> capabilities? Contact us for
             consultation, training, or software solutions.
           </p>
         </div>
@@ -95,7 +95,7 @@ export default function ContactSection() {
               </h3>
               <p className="text-gray-300 mb-6">
                 You can also reach us directly through phone or email for
-                immediate assistance with your CAD CAM requirements.
+                immediate assistance with your <span className="text-primary">CAD/CAM</span> requirements.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button

@@ -38,7 +38,7 @@ export default function Footer() {
               className="h-10 w-auto mb-4"
             />
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Leading provider of CAD CAM solutions, programming services, and
+              Leading provider of <span className="text-primary">CAD/CAM</span> solutions, programming services, and
               authorized training programs for modern manufacturing industries.
             </p>
             <div className="flex space-x-4">

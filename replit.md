@@ -36,6 +36,10 @@ A modern, professional website for Camforge Technologies showcasing CAD/CAM serv
 - Modified hero section text: "Precision CAD/CAM Solutions & Industrial Training Institute"
 - Restructured page layout: moved Authorized Reseller section before Services section
 - Applied consistent CAD/CAM styling and MASTERCAM/CARVECO branding throughout
+- Fixed button visibility issues with proper color contrast
+- Standardized all "CAD CAM" references to "CAD/CAM" with red styling
+- Updated navigation "About" button to link to company overview section
+- Made "CAMFORGE TECHNOLOGIES" uppercase and bold in company overview
 
 ## Database Schema
 - users: Basic user management (existing)
