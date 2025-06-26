@@ -12,11 +12,11 @@ export const contactInquiries = pgTable("contact_inquiries", {
   id: serial("id").primaryKey(),
   name: text("name").notNull(),
   email: text("email").notNull(),
-  phone: text("phone"),
-  company: text("company"),
+  phone: text("phone").default(""),
+  company: text("company").default(""),
   subject: text("subject").notNull(),
   message: text("message").notNull(),
-  serviceInterest: text("service_interest"),
+  serviceInterest: text("service_interest").default(""),
   createdAt: timestamp("created_at").defaultNow().notNull(),
 });
 

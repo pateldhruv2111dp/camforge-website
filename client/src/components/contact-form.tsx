@@ -157,6 +157,7 @@ export default function ContactForm() {
                         placeholder="+91 9825060415"
                         className="bg-white/20 border-white/30 text-white placeholder:text-gray-300"
                         {...field}
+                        value={field.value || ""}
                       />
                     </FormControl>
                     <FormMessage className="text-red-300" />
@@ -174,6 +175,7 @@ export default function ContactForm() {
                         placeholder="Your company name"
                         className="bg-white/20 border-white/30 text-white placeholder:text-gray-300"
                         {...field}
+                        value={field.value || ""}
                       />
                     </FormControl>
                     <FormMessage className="text-red-300" />
@@ -188,7 +190,7 @@ export default function ContactForm() {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel className="text-white">Service Interest</FormLabel>
-                  <Select onValueChange={field.onChange} defaultValue={field.value}>
+                  <Select onValueChange={field.onChange} defaultValue={field.value || ""}>
                     <FormControl>
                       <SelectTrigger className="bg-white/20 border-white/30 text-white">
                         <SelectValue placeholder="Select a service" />
