@@ -50,7 +50,7 @@ export default function FounderSection() {
                   <div className="prose prose-lg text-gray-600">
                     <p className="mb-6 leading-relaxed">
                       Founded by <strong>Mr. Dhruv Patel</strong>, Camforge
-                      Technologies is a leader in precision CAD/CAM solutions
+                      Technologies is a leader in precision <span className="text-primary">CAD/CAM</span> solutions
                       and training. With extensive experience in manufacturing
                       technology and a passion for innovation, Mr. Patel has
                       established the company as a trusted partner for
