@@ -46,10 +46,10 @@ export default function AuthorizedReseller() {
                   />
                 </div>
                 <h4 className="text-xl font-bold text-secondary mb-2">
-                  <strong>CARVECO (ART<span className="text-primary">CAM</span>)</strong>
+                  <strong>CARVECO (ArtCAM)</strong>
                 </h4>
                 <p className="text-gray-600 mb-4">
-                  Educational and Industrial Reseller
+                  Industrial Reseller
                 </p>
                 <div className="text-sm text-gray-500 space-y-1">
                   <p>✓ Complete Solution Suite</p>
