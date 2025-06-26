@@ -47,7 +47,7 @@ export default function Navigation() {
             <img
               src={logoImage}
               alt="Camforge Technologies"
-              className="h-14 w-auto transition-all duration-300 hover:scale-105"
+              className="h-16 w-auto transition-all duration-300 hover:scale-105"
             />
           </div>
 
