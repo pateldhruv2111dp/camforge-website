@@ -1,6 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { GraduationCap, Award, Handshake } from "lucide-react";
 
+import _4ed1eda4_b81a_4a7a_867e_dfaff7c321d4 from "@assets/4ed1eda4-b81a-4a7a-867e-dfaff7c321d4.jpg";
+
 export default function FounderSection() {
   return (
     <section id="founder" className="py-20 bg-white">
@@ -20,7 +22,7 @@ export default function FounderSection() {
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div className="text-center lg:text-left">
                   <img
-                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400"
+                    src={_4ed1eda4_b81a_4a7a_867e_dfaff7c321d4}
                     alt="Mr. Dhruv Patel - Founder"
                     className="w-64 h-64 rounded-full mx-auto lg:mx-0 mb-6 object-cover shadow-lg"
                   />
