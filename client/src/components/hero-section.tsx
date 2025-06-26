@@ -26,7 +26,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-r from-secondary/20 to-transparent"></div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex justify-center items-center min-h-screen">
         <div className="max-w-4xl animate-fade-in text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight">
             <div className="text-center">
               Precision <span className="text-primary">CAD/CAM</span> Solutions
             </div>
@@ -37,7 +37,7 @@ export default function HeroSection() {
               Industrial Training Institute
             </div>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed">
+          <p className="text-xl md:text-2xl text-gray-200 mb-6 leading-relaxed">
             Empowering industries with cutting-edge <span className="text-primary">CAD/CAM</span> programming services,
             authorized training, and comprehensive solutions for modern
             manufacturing.

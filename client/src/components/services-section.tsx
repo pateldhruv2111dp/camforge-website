@@ -48,10 +48,10 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section id="services" className="py-20 bg-white">
+    <section id="services" className="py-12 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 animate-slide-up">
-          <h2 className="text-4xl font-bold text-secondary mb-6">
+        <div className="text-center mb-10 animate-slide-up">
+          <h2 className="text-4xl font-bold text-secondary mb-4">
             Our Services
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -74,7 +74,7 @@ export default function ServicesSection() {
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <CardContent className="p-8">
+              <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mr-4">
                     <service.icon className="w-6 h-6 text-primary" />
@@ -82,7 +82,7 @@ export default function ServicesSection() {
                   <h3 className="text-2xl font-bold text-secondary" dangerouslySetInnerHTML={{ __html: service.title }}>
                   </h3>
                 </div>
-                <p className="text-gray-600 mb-6 leading-relaxed">
+                <p className="text-gray-600 mb-4 leading-relaxed">
                   {service.description.includes('CAD/CAM') ? (
                     <>
                       {service.description.split('CAD/CAM')[0]}

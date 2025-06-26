@@ -4,17 +4,17 @@ import carvecoLogo from "@assets/carevco-logo-light-hz-large_1750945421410.png";
 
 export default function AuthorizedReseller() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-12 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 animate-slide-up">
-          <h2 className="text-4xl font-bold text-secondary mb-6">Authorized Partner</h2>
+        <div className="text-center mb-10 animate-slide-up">
+          <h2 className="text-4xl font-bold text-secondary mb-4">Authorized Partner</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Official reseller for leading <span className="text-primary">CAD/CAM</span> software solutions
           </p>
         </div>
 
         <Card className="animate-slide-up">
-          <CardContent className="p-8">
+          <CardContent className="p-6">
             <div className="grid md:grid-cols-2 gap-8">
               <div className="text-center p-6 bg-gradient-to-br from-primary/5 to-primary/10 rounded-xl">
                 <div className="flex items-center justify-center mx-auto mb-4">
