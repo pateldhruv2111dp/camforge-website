@@ -25,6 +25,9 @@ export default function ContactSection() {
       subtitle: "Visit our office",
       content: (
         <>
+          Camforge Technologies India Pvt. Ltd.
+          <br />
+          <br />
           4th Floor, A-10, Pelican Complex,
           <br />
           Near Barcelona Complex,
