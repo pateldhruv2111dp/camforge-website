@@ -5,11 +5,11 @@ import _4ed1eda4_b81a_4a7a_867e_dfaff7c321d4 from "@assets/4ed1eda4-b81a-4a7a-86
 
 export default function FounderSection() {
   return (
-    <section id="founder" className="py-20 bg-white">
+    <section id="founder" className="py-12 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12 animate-slide-up">
-            <h2 className="text-4xl font-bold text-secondary mb-6">
+          <div className="text-center mb-8 animate-slide-up">
+            <h2 className="text-4xl font-bold text-secondary mb-4">
               Meet Our Founder
             </h2>
             <p className="text-xl text-gray-600">
@@ -18,7 +18,7 @@ export default function FounderSection() {
           </div>
 
           <Card className="animate-slide-up">
-            <CardContent className="p-8 lg:p-12">
+            <CardContent className="p-6 lg:p-8">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div className="text-center lg:text-left">
                   <img
