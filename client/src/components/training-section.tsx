@@ -1,5 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Wrench, Palette } from "lucide-react";
+import mastercamTrainingImage from "@assets/hq720_1750952113347.jpg";
+import carvecoTrainingImage from "@assets/touch-down2_1750952193596.webp";
 
 export default function TrainingSection() {
   const mastercamPrograms = [
@@ -58,8 +60,8 @@ export default function TrainingSection() {
           <Card className="overflow-hidden animate-slide-up">
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=250"
-                alt="CNC training facility"
+                src={mastercamTrainingImage}
+                alt="Mastercam Training"
                 className="w-full h-48 object-cover"
               />
             </div>
@@ -95,8 +97,8 @@ export default function TrainingSection() {
           <Card className="overflow-hidden animate-slide-up">
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=250"
-                alt="Design studio with 3D modeling"
+                src={carvecoTrainingImage}
+                alt="Carveco Training"
                 className="w-full h-48 object-cover"
               />
             </div>
