@@ -110,9 +110,9 @@ export default function ContactSection() {
                 <Button
                   asChild
                   variant="outline"
-                  className="border-2 border-white text-white hover:bg-white hover:text-secondary transition-all duration-200 font-semibold"
+                  className="border-2 border-white bg-white text-secondary hover:bg-gray-100 hover:text-secondary transition-all duration-200 font-semibold"
                 >
-                  <a href="tel:+919825060415">
+                  <a href="tel:+919825060415" className="text-secondary">
                     <Phone className="w-5 h-5 mr-2" />
                     Call Now
                   </a>
