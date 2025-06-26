@@ -48,7 +48,7 @@ export default function TrainingSection() {
             Training Programs
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Comprehensive CAD/<span className="text-primary">CAM</span> training with certified instructors and industry-standard curriculum
+            Comprehensive <span className="text-primary">CAD/CAM</span> training with certified instructors and industry-standard curriculum
           </p>
         </div>
 

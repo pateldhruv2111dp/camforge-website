@@ -50,7 +50,7 @@ export default function CompanyOverview() {
                   </>
                 ) : feature.title === "Trusted Partnership" ? (
                   <>
-                    Authorized reseller for leading CAD/<span className="text-primary">CAM</span> software like <strong>MASTER<span className="text-primary">CAM</span></strong> and <strong>CARVECO (ArtCAM)</strong> with complete support and consultation services.
+                    Authorized reseller for leading <span className="text-primary">CAD/CAM</span> software like <strong>MASTER<span className="text-primary">CAM</span></strong> and <strong>CARVECO (ArtCAM)</strong> with complete support and consultation services.
                   </>
                 ) : (
                   feature.description
