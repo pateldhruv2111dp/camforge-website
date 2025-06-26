@@ -34,6 +34,8 @@ A modern, professional website for Camforge Technologies showcasing CAD/CAM serv
 - Integrated Camforge logo (PNG with transparent background)
 - Updated typography to League Spartan fonts across entire website
 - Modified hero section text: "Precision CAD/CAM Solutions & Industrial Training Institute"
+- Restructured page layout: moved Authorized Reseller section before Services section
+- Applied consistent CAD/CAM styling and MASTERCAM/CARVECO branding throughout
 
 ## Database Schema
 - users: Basic user management (existing)

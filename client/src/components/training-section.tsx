@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Award, IdCard, Wrench, Palette } from "lucide-react";
+import { Wrench, Palette } from "lucide-react";
 
 export default function TrainingSection() {
   const mastercamPrograms = [
@@ -53,55 +53,7 @@ export default function TrainingSection() {
           </p>
         </div>
 
-        {/* Authorized Reseller Section */}
-        <Card className="mb-12 animate-slide-up">
-          <CardContent className="p-8">
-            <div className="text-center mb-8">
-              <h3 className="text-3xl font-bold text-secondary mb-4">
-                Authorized Reseller
-              </h3>
-              <p className="text-gray-600 text-lg">
-                Official distributor for leading CAD CAM software solutions
-              </p>
-            </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="text-center p-6 bg-gradient-to-br from-primary/5 to-primary/10 rounded-xl">
-                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <IdCard className="w-8 h-8 text-primary" />
-                </div>
-                <h4 className="text-xl font-bold text-secondary mb-2">
-                  <strong>MASTER<span className="text-primary">CAM</span></strong>
-                </h4>
-                <p className="text-gray-600 mb-4">
-                  Educational and Industrial Reseller
-                </p>
-                <div className="text-sm text-gray-500 space-y-1">
-                  <p>✓ Full Software Licensing</p>
-                  <p>✓ Technical Support</p>
-                  <p>✓ Updates & Maintenance</p>
-                </div>
-              </div>
-
-              <div className="text-center p-6 bg-gradient-to-br from-secondary/5 to-secondary/10 rounded-xl">
-                <div className="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Award className="w-8 h-8 text-secondary" />
-                </div>
-                <h4 className="text-xl font-bold text-secondary mb-2">
-                  <strong>CARVECO (ART<span className="text-primary">CAM</span>)</strong>
-                </h4>
-                <p className="text-gray-600 mb-4">
-                  Educational and Industrial Reseller
-                </p>
-                <div className="text-sm text-gray-500 space-y-1">
-                  <p>✓ Complete Solution Suite</p>
-                  <p>✓ Installation Support</p>
-                  <p>✓ Training Integration</p>
-                </div>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
 
         {/* Training Programs */}
         <div className="grid lg:grid-cols-2 gap-8">
