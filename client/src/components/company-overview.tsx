@@ -18,7 +18,7 @@ export default function CompanyOverview() {
       icon: Handshake,
       title: "Trusted Partnership",
       description:
-        "Authorized reseller for leading CAD/CAM software with complete support and consultation services.",
+        "Authorized reseller for leading CAD/CAM software like MASTERCAM and CARVECO (ArtCAM) with complete support and consultation services.",
     },
   ];
 
@@ -47,6 +47,10 @@ export default function CompanyOverview() {
                 {feature.title === "Authorized Training" ? (
                   <>
                     Official <strong>MASTER<span className="text-primary">CAM</span></strong> and <strong>CARVECO (ArtCAM)</strong> training programs with certified instructors and comprehensive curriculum.
+                  </>
+                ) : feature.title === "Trusted Partnership" ? (
+                  <>
+                    Authorized reseller for leading CAD/<span className="text-primary">CAM</span> software like <strong>MASTER<span className="text-primary">CAM</span></strong> and <strong>CARVECO (ArtCAM)</strong> with complete support and consultation services.
                   </>
                 ) : (
                   feature.description
