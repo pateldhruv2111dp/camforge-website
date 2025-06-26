@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { IdCard, Award } from "lucide-react";
+import mastercamLogo from "@assets/ind and ed reseller (1)_1750945431218.png";
+import carvecoLogo from "@assets/carevco-logo-light-hz-large_1750945421410.png";
 
 export default function AuthorizedReseller() {
   return (
@@ -16,8 +17,12 @@ export default function AuthorizedReseller() {
           <CardContent className="p-8">
             <div className="grid md:grid-cols-2 gap-8">
               <div className="text-center p-6 bg-gradient-to-br from-primary/5 to-primary/10 rounded-xl">
-                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <IdCard className="w-8 h-8 text-primary" />
+                <div className="flex items-center justify-center mx-auto mb-4">
+                  <img 
+                    src={mastercamLogo} 
+                    alt="Mastercam Authorized Reseller" 
+                    className="h-16 w-auto object-contain"
+                  />
                 </div>
                 <h4 className="text-xl font-bold text-secondary mb-2">
                   <strong>MASTER<span className="text-primary">CAM</span></strong>
@@ -33,8 +38,12 @@ export default function AuthorizedReseller() {
               </div>
 
               <div className="text-center p-6 bg-gradient-to-br from-secondary/5 to-secondary/10 rounded-xl">
-                <div className="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Award className="w-8 h-8 text-secondary" />
+                <div className="flex items-center justify-center mx-auto mb-4">
+                  <img 
+                    src={carvecoLogo} 
+                    alt="Carveco Authorized Reseller" 
+                    className="h-16 w-auto object-contain"
+                  />
                 </div>
                 <h4 className="text-xl font-bold text-secondary mb-2">
                   <strong>CARVECO (ART<span className="text-primary">CAM</span>)</strong>
