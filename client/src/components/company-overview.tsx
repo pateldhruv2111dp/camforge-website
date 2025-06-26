@@ -1,6 +1,7 @@
 import { Settings, GraduationCap, Handshake } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import advancedProgrammingImage from "@assets/image_1750951012248.png";
+import partnershipImage from "@assets/istockphoto-1916729901-612x612_1750951366612.jpg";
 
 export default function CompanyOverview() {
   const features = [
@@ -23,7 +24,7 @@ export default function CompanyOverview() {
       title: "Trusted Partnership",
       description:
         "Authorized reseller for leading CAD/CAM software like MASTERCAM and CARVECO (ArtCAM) with complete support and consultation services.",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=300",
+      image: partnershipImage,
     },
   ];
 
