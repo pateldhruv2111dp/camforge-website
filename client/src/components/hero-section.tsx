@@ -23,7 +23,7 @@ export default function HeroSection() {
     >
       {/* Background overlay */}
       <div className="absolute inset-0 bg-black/60"></div>
-      <div className="absolute inset-0 bg-gradient-to-r from-secondary/20 to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-secondary/10 to-transparent"></div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex justify-center items-center min-h-screen">
         <div className="max-w-4xl animate-fade-in text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight">
