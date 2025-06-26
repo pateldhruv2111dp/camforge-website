@@ -19,8 +19,8 @@ export default function Footer() {
   ];
 
   const services = [
-    "CAM Programming",
-    "CAD Services",
+    "<span className='text-primary'>CAM</span> Programming",
+    "<span className='text-primary'>CAD</span> Services",
     "Corporate Training",
     "Mastercam Training",
     "Carveco Training",
@@ -89,7 +89,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {services.map((service) => (
                 <li key={service}>
-                  <span className="text-gray-400">{service}</span>
+                  <span className="text-gray-400" dangerouslySetInnerHTML={{ __html: service }}></span>
                 </li>
               ))}
             </ul>
