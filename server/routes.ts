@@ -23,13 +23,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
   app.get("/api/contact-inquiries", async (req, res) => {
     try {
       const inquiries = await storage.getContactInquiries();
-      res.json({ success: true, data: inquiries });
+      res.json(inquiries);
     } catch (error) {
       console.error("Failed to fetch contact inquiries:", error);
-      res.status(500).json({ 
-        success: false, 
-        error: "Failed to fetch contact inquiries" 
-      });
+      res.status(500).json({ error: "Failed to fetch contact inquiries" });
     }
   });
 
