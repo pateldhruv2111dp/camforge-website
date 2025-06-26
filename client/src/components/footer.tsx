@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Linkedin, Twitter, Facebook } from "lucide-react";
+import logoImage from "@assets/6f1df9f1-721f-42b2-a6f3-7f216aa42081_1750940404709.jpg";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -32,7 +33,7 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <img
-              src="@assets/6f1df9f1-721f-42b2-a6f3-7f216aa42081_1750940404709.jpg"
+              src={logoImage}
               alt="Camforge Technologies"
               className="h-8 w-auto mb-4"
             />
