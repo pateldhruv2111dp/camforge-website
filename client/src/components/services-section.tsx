@@ -31,9 +31,9 @@ export default function ServicesSection() {
     },
     {
       icon: Users,
-      title: "CAD CAM Corporate Training",
+      title: "CAD/<span className='text-primary'>CAM</span> Corporate Training",
       description:
-        "Comprehensive training programs designed to enhance your team's CAD CAM skills and productivity.",
+        "Comprehensive training programs designed to enhance your team's CAD/CAM skills and productivity.",
       image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=300",
       features: [
         "Online Training Programs",
@@ -76,8 +76,7 @@ export default function ServicesSection() {
                   <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mr-4">
                     <service.icon className="w-6 h-6 text-primary" />
                   </div>
-                  <h3 className="text-2xl font-bold text-secondary">
-                    {service.title}
+                  <h3 className="text-2xl font-bold text-secondary" dangerouslySetInnerHTML={{ __html: service.title }}>
                   </h3>
                 </div>
                 <p className="text-gray-600 mb-6 leading-relaxed">

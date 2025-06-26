@@ -12,13 +12,13 @@ export default function CompanyOverview() {
       icon: GraduationCap,
       title: "Authorized Training",
       description:
-        "Official Mastercam and Carveco training programs with certified instructors and comprehensive curriculum.",
+        "Official MASTERCAM and CARVECO (ARTCAM) training programs with certified instructors and comprehensive curriculum.",
     },
     {
       icon: Handshake,
       title: "Trusted Partnership",
       description:
-        "Authorized reseller for leading CAD CAM software with complete support and consultation services.",
+        "Authorized reseller for leading CAD/CAM software with complete support and consultation services.",
     },
   ];
 
@@ -26,8 +26,8 @@ export default function CompanyOverview() {
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-slide-up">
-          <h2 className="text-4xl font-bold text-secondary mb-6">Leading CAD/CAM Excellence</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">Camforge Technologies specializes in advanced CAD/CAM solutions, providing comprehensive programming services, authorized training programs, and cutting-edge technology solutions for modern manufacturing industries.</p>
+          <h2 className="text-4xl font-bold text-secondary mb-6">Leading <span className="text-primary">CAD/CAM</span> Excellence</h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">Camforge Technologies specializes in advanced <span className="text-primary">CAD/CAM</span> solutions, providing comprehensive programming services, authorized training programs, and cutting-edge technology solutions for modern manufacturing industries.</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -44,7 +44,13 @@ export default function CompanyOverview() {
                 {feature.title}
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                {feature.description}
+                {feature.title === "Authorized Training" ? (
+                  <>
+                    Official <strong>MASTERCAM</strong> and <strong>CARVECO (ART<span className="text-primary">CAM</span>)</strong> training programs with certified instructors and comprehensive curriculum.
+                  </>
+                ) : (
+                  feature.description
+                )}
               </p>
             </div>
           ))}

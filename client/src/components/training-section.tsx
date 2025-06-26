@@ -121,7 +121,7 @@ export default function TrainingSection() {
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-secondary">
-                    Mastercam Training Institute
+                    <strong>MASTER<span className="text-primary">CAM</span></strong> Training Institute
                   </h3>
                   <p className="text-gray-500">Professional CAM Programming</p>
                 </div>
