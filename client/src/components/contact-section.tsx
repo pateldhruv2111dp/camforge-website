@@ -67,7 +67,7 @@ export default function ContactSection() {
                 {item.href ? (
                   <a
                     href={item.href}
-                    className="text-primary hover:text-red-300 transition-colors duration-200 font-medium"
+                    className="text-primary hover:text-red-300 transition-colors duration-200 text-[20px] font-semibold"
                   >
                     {item.content}
                   </a>
