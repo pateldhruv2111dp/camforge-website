@@ -20,8 +20,10 @@ export default function HeroSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl animate-fade-in">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            Precision <span className="text-primary">CAD/CAM</span> Solutions &
-            Training
+            Precision <span className="text-primary">CAD/CAM</span> Solutions
+            <br />
+            & <br />
+            Industrial Training Institute
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed">
             Empowering industries with cutting-edge CAD CAM programming services,
