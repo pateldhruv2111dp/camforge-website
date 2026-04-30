@@ -1,5 +1,4 @@
 import { Settings, GraduationCap, Handshake } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
 import advancedProgrammingImage from "@assets/image_1750951012248.png";
 import partnershipImage from "@assets/istockphoto-1916729901-612x612_1750951366612.jpg";
 
@@ -15,65 +14,85 @@ export default function CompanyOverview() {
     {
       icon: GraduationCap,
       title: "Authorized Training",
-      description:
-        "Official MASTERCAM and CARVECO (ArtCAM) training programs with certified instructors and comprehensive curriculum.",
-      image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=300",
+      description: null,
+      image:
+        "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=300",
     },
     {
       icon: Handshake,
       title: "Trusted Partnership",
-      description:
-        "Authorized reseller for leading CAD/CAM software like MASTERCAM and CARVECO (ArtCAM) with complete support and consultation services.",
+      description: null,
       image: partnershipImage,
     },
   ];
 
   return (
-    <section id="about" className="py-12 bg-gray-50">
+    <section id="about" className="py-24 section-muted relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-10 animate-slide-up">
-          <h2 className="text-4xl font-bold text-secondary mb-4">Leading <span className="text-primary">CAD/CAM</span> Excellence</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"><strong>CAMFORGE TECHNOLOGIES</strong> specializes in advanced <span className="text-primary">CAD/CAM</span> solutions, providing comprehensive programming services, authorized training programs, and cutting-edge technology solutions for modern manufacturing industries.</p>
+        <div className="text-center mb-16 animate-slide-up">
+          <p className="text-primary font-semibold tracking-widest text-xs uppercase mb-3">
+            Who We Are
+          </p>
+          <h2 className="text-4xl md:text-5xl font-bold text-[#1d1d1f] mb-4 tracking-tight">
+            Leading <span className="text-gradient-red">CAD/CAM</span> Excellence
+          </h2>
+          <div className="divider-red mx-auto mb-6" />
+          <p className="text-lg text-[#6e6e73] max-w-3xl mx-auto leading-relaxed">
+            <strong className="text-[#1d1d1f]">CAMFORGE TECHNOLOGIES</strong> specializes
+            in advanced <span className="text-primary">CAD/CAM</span> solutions, providing
+            comprehensive programming services, authorized training programs, and
+            cutting-edge technology solutions for modern manufacturing industries.
+          </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-6">
           {features.map((feature, index) => (
-            <Card
+            <div
               key={index}
-              className="overflow-hidden group hover:shadow-xl transition-shadow duration-300 animate-slide-up"
-              style={{ animationDelay: `${index * 0.2}s` }}
+              className="glass-card glass-card-hover rounded-2xl overflow-hidden group animate-slide-up"
+              style={{ animationDelay: `${index * 0.12}s` }}
             >
-              <div className="relative overflow-hidden">
+              <div className="relative overflow-hidden h-48">
                 <img
                   src={feature.image}
                   alt={feature.title}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
               </div>
-              <CardContent className="p-6">
-                <div className="flex items-center mb-4">
-                  <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mr-4">
-                    <feature.icon className="w-6 h-6 text-primary" />
+              <div className="p-6">
+                <div className="flex items-center mb-3">
+                  <div className="bg-primary/10 border border-primary/15 w-10 h-10 rounded-xl flex items-center justify-center mr-3 flex-shrink-0">
+                    <feature.icon className="w-5 h-5 text-primary" />
                   </div>
-                  <h3 className="text-2xl font-bold text-secondary">
+                  <h3 className="text-base font-bold text-[#1d1d1f] leading-tight">
                     {feature.title}
                   </h3>
                 </div>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-[#6e6e73] leading-relaxed text-sm">
                   {feature.title === "Authorized Training" ? (
                     <>
-                      Official <strong>MASTER<span className="text-primary">CAM</span></strong> and <strong>CARVECO (ArtCAM)</strong> training programs with certified instructors and comprehensive curriculum.
+                      Official{" "}
+                      <strong className="text-[#1d1d1f]">MASTERCAM</strong>{" "}
+                      and <strong className="text-[#1d1d1f]">CARVECO (ArtCAM)</strong>{" "}
+                      training programs with certified instructors and comprehensive
+                      curriculum.
                     </>
                   ) : feature.title === "Trusted Partnership" ? (
                     <>
-                      Authorized reseller for leading <span className="text-primary">CAD/CAM</span> software like <strong>MASTER<span className="text-primary">CAM</span></strong> and <strong>CARVECO (ArtCAM)</strong> with complete support and consultation services.
+                      Authorized reseller for leading{" "}
+                      <span className="text-primary">CAD/CAM</span> software like{" "}
+                      <strong className="text-[#1d1d1f]">MASTERCAM</strong>{" "}
+                      and{" "}
+                      <strong className="text-[#1d1d1f]">CARVECO (ArtCAM)</strong> with
+                      complete support and consultation.
                     </>
                   ) : (
                     feature.description
                   )}
                 </p>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           ))}
         </div>
       </div>

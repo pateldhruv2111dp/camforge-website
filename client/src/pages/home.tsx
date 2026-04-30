@@ -7,19 +7,24 @@ import TrainingSection from "@/components/training-section";
 import FounderSection from "@/components/founder-section";
 import ContactSection from "@/components/contact-section";
 import Footer from "@/components/footer";
+import WhatsAppButton from "@/components/whatsapp-button";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
       <Navigation />
       <HeroSection />
-      <CompanyOverview />
-      <AuthorizedReseller />
-      <ServicesSection />
-      <TrainingSection />
-      <FounderSection />
-      <ContactSection />
-      <Footer />
+      {/* All sections below slide over the fixed video like elevator floors */}
+      <div className="relative bg-white" style={{ zIndex: 2 }}>
+        <CompanyOverview />
+        <AuthorizedReseller />
+        <ServicesSection />
+        <TrainingSection />
+        <FounderSection />
+        <ContactSection />
+        <Footer />
+      </div>
+      <WhatsAppButton />
     </div>
   );
 }

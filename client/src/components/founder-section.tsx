@@ -1,89 +1,80 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { GraduationCap, Award, Handshake } from "lucide-react";
-
-import _4ed1eda4_b81a_4a7a_867e_dfaff7c321d4 from "@assets/4ed1eda4-b81a-4a7a-867e-dfaff7c321d4.jpg";
+import { GraduationCap, Award, Handshake, Clock } from "lucide-react";
+import founderImage from "@assets/founder-dhruv-patel.png";
 
 export default function FounderSection() {
+  const credentials = [
+    { icon: GraduationCap, label: "Manufacturing Technology Expert"      },
+    { icon: Award,         label: "Authorized Training Provider"         },
+    { icon: Handshake,     label: "Industry Leader"                      },
+    { icon: Clock,         label: "9 Years of Mastercam India Experience" },
+  ];
+
   return (
-    <section id="founder" className="py-12 bg-white">
+    <section id="founder" className="py-24 section-muted">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-8 animate-slide-up">
-            <h2 className="text-4xl font-bold text-secondary mb-4">
-              Meet Our Founder
-            </h2>
-            <p className="text-xl text-gray-600">
-              Leadership driving innovation in <span className="text-primary">CAD/CAM</span> technology
-            </p>
-          </div>
+        <div className="text-center mb-16 animate-slide-up">
+          <p className="text-primary font-semibold tracking-widest text-xs uppercase mb-3">
+            Leadership
+          </p>
+          <h2 className="text-4xl md:text-5xl font-bold text-[#1d1d1f] mb-4 tracking-tight">
+            Meet Our Founder
+          </h2>
+          <div className="divider-red mx-auto" />
+        </div>
 
-          <Card className="animate-slide-up">
-            <CardContent className="p-6 lg:p-8">
-              <div className="grid lg:grid-cols-2 gap-8 items-center">
-                <div className="text-center lg:text-left">
-                  <img
-                    src={_4ed1eda4_b81a_4a7a_867e_dfaff7c321d4}
-                    alt="Mr. Dhruv Patel - Founder"
-                    className="w-64 h-64 rounded-full mx-auto lg:mx-0 mb-4 object-cover shadow-lg"
-                  />
+        <div className="max-w-5xl mx-auto">
+          <div className="glass-card rounded-3xl overflow-hidden animate-slide-up">
+            <div className="grid lg:grid-cols-2 gap-0">
 
-                  <div className="lg:hidden">
-                    <h3 className="text-3xl font-bold text-secondary mb-2">
-                      Mr. Dhruv Patel
-                    </h3>
-                    <p className="text-primary font-semibold text-lg mb-4">
-                      Founder & CEO
-                    </p>
-                  </div>
+              {/* Photo */}
+              <div className="relative overflow-hidden min-h-[400px]">
+                <img
+                  src={founderImage}
+                  alt="Mr. Dhruv Patel - Founder"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+
+              {/* Content */}
+              <div className="p-8 lg:p-12 flex flex-col justify-center">
+                <h3 className="text-3xl font-bold text-[#1d1d1f] mb-1">Mr. Dhruv Patel</h3>
+                <p className="text-primary font-semibold text-lg mb-5">Founder &amp; CEO</p>
+
+                <div className="h-px bg-gradient-to-r from-primary/30 to-transparent mb-6" />
+
+                <div className="space-y-4 text-[#6e6e73] leading-relaxed text-sm mb-8">
+                  <p>
+                    Founded by{" "}
+                    <strong className="text-[#1d1d1f]">Mr. Dhruv Patel</strong>, Camforge
+                    Technologies is a leader in precision{" "}
+                    <span className="text-primary">CAD/CAM</span> solutions and training.
+                    With extensive experience in manufacturing technology and a passion for
+                    innovation, Mr. Patel has established the company as a trusted partner
+                    for industries seeking advanced solutions.
+                  </p>
+                  <p>
+                    Under his leadership, Camforge Technologies has become an authorized
+                    reseller and training institute for industry-leading software platforms,
+                    helping professionals and organizations unlock the full potential of
+                    modern manufacturing technology.
+                  </p>
                 </div>
 
-                <div>
-                  <div className="hidden lg:block mb-4">
-                    <h3 className="text-3xl font-bold text-secondary mb-2">
-                      Mr. Dhruv Patel
-                    </h3>
-                    <p className="text-primary font-semibold text-lg">
-                      Founder & CEO
-                    </p>
-                  </div>
-
-                  <div className="prose prose-lg text-gray-600">
-                    <p className="mb-6 leading-relaxed">
-                      Founded by <strong>Mr. Dhruv Patel</strong>, Camforge
-                      Technologies is a leader in precision <span className="text-primary">CAD/CAM</span> solutions
-                      and training. With extensive experience in manufacturing
-                      technology and a passion for innovation, Mr. Patel has
-                      established the company as a trusted partner for
-                      industries seeking advanced <span className="text-primary">CAD/CAM</span> solutions.
-                    </p>
-
-                    <p className="mb-6 leading-relaxed">
-                      Under his leadership, Camforge Technologies has become an
-                      authorized reseller and training institute for
-                      industry-leading software platforms, helping professionals
-                      and organizations unlock the full potential of modern
-                      manufacturing technology.
-                    </p>
-
-                    <div className="flex flex-wrap gap-4 mt-8">
-                      <div className="flex items-center text-sm font-medium text-gray-600">
-                        <GraduationCap className="w-5 h-5 text-primary mr-2" />
-                        Manufacturing Technology Expert
-                      </div>
-                      <div className="flex items-center text-sm font-medium text-gray-600">
-                        <Award className="w-5 h-5 text-primary mr-2" />
-                        Authorized Training Provider
-                      </div>
-                      <div className="flex items-center text-sm font-medium text-gray-600">
-                        <Handshake className="w-5 h-5 text-primary mr-2" />
-                        Industry Leader
-                      </div>
+                <div className="flex flex-wrap gap-2">
+                  {credentials.map((cred, i) => (
+                    <div
+                      key={i}
+                      className="flex items-center gap-2 px-3 py-2 rounded-xl bg-white border border-black/[0.08] shadow-sm text-xs font-medium text-[#1d1d1f]"
+                    >
+                      <cred.icon className="w-4 h-4 text-primary flex-shrink-0" />
+                      {cred.label}
                     </div>
-                  </div>
+                  ))}
                 </div>
               </div>
-            </CardContent>
-          </Card>
+
+            </div>
+          </div>
         </div>
       </div>
     </section>
