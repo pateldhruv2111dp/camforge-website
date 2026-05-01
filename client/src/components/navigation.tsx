@@ -37,7 +37,7 @@ export default function Navigation() {
           : "bg-transparent border-b border-transparent"
       }`}
     >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-6 sm:px-10 lg:px-16">
         <div className="flex justify-between items-center py-2">
 
           {/* Logo */}
@@ -45,7 +45,7 @@ export default function Navigation() {
             <img
               src={logoImage}
               alt="Camforge Technologies"
-              className="h-14 w-auto transition-transform duration-200 hover:scale-105"
+              className="h-16 w-auto transition-transform duration-200 hover:scale-105"
             />
           </div>
 
