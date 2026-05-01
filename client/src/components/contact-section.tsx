@@ -40,7 +40,7 @@ export default function ContactSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="text-center mb-16 animate-slide-up">
-          <p className="text-primary font-semibold tracking-widest text-xs uppercase mb-3">
+          <p className="text-primary font-semibold tracking-widest text-sm uppercase mb-3">
             Reach Out
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-[#1d1d1f] mb-4 tracking-tight">
@@ -64,17 +64,17 @@ export default function ContactSection() {
               <div className="w-12 h-12 bg-primary/10 border border-primary/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <item.icon className="w-5 h-5 text-primary" />
               </div>
-              <h3 className="text-base font-bold text-[#1d1d1f] mb-1">{item.title}</h3>
-              <p className="text-[#6e6e73] text-xs mb-3">{item.subtitle}</p>
+              <h3 className="text-lg font-bold text-[#1d1d1f] mb-1">{item.title}</h3>
+              <p className="text-[#6e6e73] text-sm mb-3">{item.subtitle}</p>
               {item.href ? (
                 <a
                   href={item.href}
-                  className="text-primary hover:text-red-600 transition-colors font-semibold text-sm"
+                  className="text-primary hover:text-red-600 transition-colors font-semibold text-base"
                 >
                   {item.content}
                 </a>
               ) : (
-                <address className="text-[#1d1d1f] not-italic text-xs font-medium leading-relaxed">
+                <address className="text-[#1d1d1f] not-italic text-sm font-medium leading-relaxed">
                   {item.content}
                 </address>
               )}
@@ -86,7 +86,7 @@ export default function ContactSection() {
         <div className="text-center animate-slide-up">
           <div className="glass-card rounded-2xl p-8 max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold text-[#1d1d1f] mb-3">Prefer Direct Contact?</h3>
-            <p className="text-[#6e6e73] mb-6 text-sm leading-relaxed">
+            <p className="text-[#6e6e73] mb-6 text-base leading-relaxed">
               Reach us directly for immediate assistance with your{" "}
               <span className="text-primary">CAD/CAM</span> requirements.
             </p>

@@ -13,7 +13,7 @@ export default function FounderSection() {
     <section id="founder" className="py-24 section-muted">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-slide-up">
-          <p className="text-primary font-semibold tracking-widest text-xs uppercase mb-3">
+          <p className="text-primary font-semibold tracking-widest text-sm uppercase mb-3">
             Leadership
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-[#1d1d1f] mb-4 tracking-tight">
@@ -42,7 +42,7 @@ export default function FounderSection() {
 
                 <div className="h-px bg-gradient-to-r from-primary/30 to-transparent mb-6" />
 
-                <div className="space-y-4 text-[#6e6e73] leading-relaxed text-sm mb-8">
+                <div className="space-y-4 text-[#6e6e73] leading-relaxed text-base mb-8">
                   <p>
                     Founded by{" "}
                     <strong className="text-[#1d1d1f]">Mr. Dhruv Patel</strong>, Camforge
@@ -64,7 +64,7 @@ export default function FounderSection() {
                   {credentials.map((cred, i) => (
                     <div
                       key={i}
-                      className="flex items-center gap-2 px-3 py-2 rounded-xl bg-white border border-black/[0.08] shadow-sm text-xs font-medium text-[#1d1d1f]"
+                      className="flex items-center gap-2 px-3 py-2 rounded-xl bg-white border border-black/[0.08] shadow-sm text-sm font-medium text-[#1d1d1f]"
                     >
                       <cred.icon className="w-4 h-4 text-primary flex-shrink-0" />
                       {cred.label}

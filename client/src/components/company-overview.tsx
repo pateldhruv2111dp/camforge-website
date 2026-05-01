@@ -30,7 +30,7 @@ export default function CompanyOverview() {
     <section id="about" className="py-24 section-muted relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-slide-up">
-          <p className="text-primary font-semibold tracking-widest text-xs uppercase mb-3">
+          <p className="text-primary font-semibold tracking-widest text-sm uppercase mb-3">
             Who We Are
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-[#1d1d1f] mb-4 tracking-tight">
@@ -65,11 +65,11 @@ export default function CompanyOverview() {
                   <div className="bg-primary/10 border border-primary/15 w-10 h-10 rounded-xl flex items-center justify-center mr-3 flex-shrink-0">
                     <feature.icon className="w-5 h-5 text-primary" />
                   </div>
-                  <h3 className="text-base font-bold text-[#1d1d1f] leading-tight">
+                  <h3 className="text-lg font-bold text-[#1d1d1f] leading-tight">
                     {feature.title}
                   </h3>
                 </div>
-                <p className="text-[#6e6e73] leading-relaxed text-sm">
+                <p className="text-[#6e6e73] leading-relaxed text-base">
                   {feature.title === "Authorized Training" ? (
                     <>
                       Official{" "}

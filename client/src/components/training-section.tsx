@@ -20,7 +20,7 @@ export default function TrainingSection() {
     <section id="training" className="py-24 section-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-slide-up">
-          <p className="text-primary font-semibold tracking-widest text-xs uppercase mb-3">
+          <p className="text-primary font-semibold tracking-widest text-sm uppercase mb-3">
             Learn With Us
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-[#1d1d1f] mb-4 tracking-tight">
@@ -54,7 +54,7 @@ export default function TrainingSection() {
                   <h3 className="text-xl font-bold text-[#1d1d1f]">
                     MASTERCAM Training
                   </h3>
-                  <p className="text-[#6e6e73] text-xs">Professional CAM Programming</p>
+                  <p className="text-[#6e6e73] text-sm">Professional CAM Programming</p>
                 </div>
               </div>
               <div className="space-y-0">
@@ -62,8 +62,8 @@ export default function TrainingSection() {
                   <div key={i} className="flex items-start py-3 border-b border-black/[0.06] last:border-0">
                     <div className="w-1 min-h-[38px] bg-gradient-to-b from-primary to-primary/20 rounded-full mr-4 mt-1 flex-shrink-0" />
                     <div>
-                      <h4 className="font-semibold text-[#1d1d1f] text-sm">{prog.title}</h4>
-                      <p className="text-xs text-[#6e6e73] mt-0.5">{prog.description}</p>
+                      <h4 className="font-semibold text-[#1d1d1f] text-base">{prog.title}</h4>
+                      <p className="text-sm text-[#6e6e73] mt-0.5">{prog.description}</p>
                     </div>
                   </div>
                 ))}
@@ -95,7 +95,7 @@ export default function TrainingSection() {
                     <span className="text-[#6e6e73] font-normal text-base">(ArtCAM)</span>{" "}
                     Training
                   </h3>
-                  <p className="text-[#6e6e73] text-xs">Design &amp; Machining Solutions</p>
+                  <p className="text-[#6e6e73] text-sm">Design &amp; Machining Solutions</p>
                 </div>
               </div>
               <div className="space-y-0">
@@ -103,8 +103,8 @@ export default function TrainingSection() {
                   <div key={i} className="flex items-start py-3 border-b border-black/[0.06] last:border-0">
                     <div className="w-1 min-h-[38px] bg-gradient-to-b from-secondary to-secondary/20 rounded-full mr-4 mt-1 flex-shrink-0" />
                     <div>
-                      <h4 className="font-semibold text-[#1d1d1f] text-sm">{prog.title}</h4>
-                      <p className="text-xs text-[#6e6e73] mt-0.5">{prog.description}</p>
+                      <h4 className="font-semibold text-[#1d1d1f] text-base">{prog.title}</h4>
+                      <p className="text-sm text-[#6e6e73] mt-0.5">{prog.description}</p>
                     </div>
                   </div>
                 ))}
