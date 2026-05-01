@@ -1,58 +1,75 @@
-import { Button } from "@/components/ui/button";
-import { Linkedin, Twitter, Facebook } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import logoImage from "@assets/6f1df9f1-721f-42b2-a6f3-7f216aa42081-removebg-preview_1750940759782.png";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+    if (element) element.scrollIntoView({ behavior: "smooth" });
   };
 
   const quickLinks = [
-    { href: "home", label: "Home" },
+    { href: "home",     label: "Home"     },
     { href: "services", label: "Services" },
     { href: "training", label: "Training" },
-    { href: "founder", label: "About" },
-    { href: "contact", label: "Contact" },
+    { href: "founder",  label: "About"    },
+    { href: "contact",  label: "Contact"  },
   ];
 
   const services = [
-    "<span className='text-primary'>CAM</span> Programming",
-    "<span className='text-primary'>CAD</span> Services",
-    "Corporate Training",
-    "Mastercam Training",
-    "Carveco Training",
+    { label: "CAM Programming", prefix: "CAM" },
+    { label: "CAD Services",    prefix: "CAD" },
+    { label: "Corporate Training", prefix: null },
+    { label: "Mastercam Training", prefix: null },
+    { label: "Carveco Training",   prefix: null },
   ];
 
   return (
-    <footer className="text-white py-8 bg-[#f2f2f5]">
+    <footer className="section-muted border-t border-black/[0.08]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
-          {/* Company Info */}
+
+        <div className="py-12 grid lg:grid-cols-4 md:grid-cols-2 gap-10">
+
+          {/* Brand */}
           <div className="lg:col-span-2">
             <img
               src={logoImage}
               alt="Camforge Technologies"
-              className="h-16 w-auto mb-4"
+              className="h-14 w-auto mb-5"
             />
-            <p className="text-gray-400 mb-6 leading-relaxed">
-              Leading provider of <span className="text-primary">CAD/CAM</span> solutions, programming services, and
-              authorized training programs for modern manufacturing industries.
+            <p className="text-[#6e6e73] leading-relaxed text-sm max-w-sm mb-6">
+              Leading provider of <span className="text-primary">CAD/CAM</span> solutions,
+              programming services, and authorized training programs for modern
+              manufacturing industries.
             </p>
-            
+            <div className="space-y-2">
+              <a
+                href="mailto:support@camforge.in"
+                className="flex items-center gap-2 text-[#6e6e73] hover:text-primary text-sm transition-colors"
+              >
+                <Mail className="w-4 h-4 text-primary flex-shrink-0" />
+                support@camforge.in
+              </a>
+              <a
+                href="tel:+919825060415"
+                className="flex items-center gap-2 text-[#6e6e73] hover:text-primary text-sm transition-colors"
+              >
+                <Phone className="w-4 h-4 text-primary flex-shrink-0" />
+                +91 9825060415
+              </a>
+            </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 bg-[#ffffff00] text-[#de123b]">Quick Links</h4>
-            <ul className="space-y-2">
+            <h4 className="text-[#1d1d1f] font-semibold mb-5 text-sm tracking-widest uppercase">
+              Quick Links
+            </h4>
+            <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.href}>
                   <button
                     onClick={() => scrollToSection(link.href)}
-                    className="text-gray-400 hover:text-white transition-colors duration-200 text-left"
+                    className="text-[#6e6e73] hover:text-primary transition-colors text-sm text-left"
                   >
                     {link.label}
                   </button>
@@ -63,20 +80,34 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-[#de123b]">Services</h4>
-            <ul className="space-y-2">
-              {services.map((service) => (
-                <li key={service}>
-                  <span className="text-gray-400" dangerouslySetInnerHTML={{ __html: service }}></span>
+            <h4 className="text-[#1d1d1f] font-semibold mb-5 text-sm tracking-widest uppercase">
+              Services
+            </h4>
+            <ul className="space-y-3">
+              {services.map((s, i) => (
+                <li key={i} className="text-[#6e6e73] text-sm">
+                  {s.prefix ? (
+                    <>
+                      <span className="text-primary">{s.prefix}</span>
+                      {s.label.replace(s.prefix, "")}
+                    </>
+                  ) : s.label}
                 </li>
               ))}
             </ul>
           </div>
+
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-6 text-center">
-          <p className="text-gray-400">© 2025 Camforge Technologies India Pvt. Ltd. All rights reserved.</p>
+        {/* Bottom bar */}
+        <div className="h-px bg-black/[0.08]" />
+        <div className="py-5 flex flex-col sm:flex-row justify-between items-center gap-2">
+          <p className="text-[#6e6e73] text-sm">
+            © 2025 Camforge Technologies India Pvt. Ltd. All rights reserved.
+          </p>
+          <p className="text-[#aeaeb2] text-xs">Powered by Camforge Technologies</p>
         </div>
+
       </div>
     </footer>
   );

@@ -9,10 +9,7 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 100);
-    };
-
+    const handleScroll = () => setIsScrolled(window.scrollY > 60);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -26,81 +23,92 @@ export default function Navigation() {
   };
 
   const navLinks = [
-    { href: "home", label: "Home" },
+    { href: "home",     label: "Home"     },
     { href: "services", label: "Services" },
     { href: "training", label: "Training" },
-    { href: "about", label: "About" },
+    { href: "about",    label: "About"    },
   ];
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 w-full z-50 transition-all duration-500 ${
         isScrolled
-          ? "bg-white/95 backdrop-blur-sm shadow-md"
-          : "bg-white/95 backdrop-blur-sm shadow-sm"
+          ? "bg-white/40 backdrop-blur-2xl backdrop-saturate-150 border-b border-white/50 shadow-[0_4px_32px_rgba(0,0,0,0.10),inset_0_1px_0_rgba(255,255,255,0.6)]"
+          : "bg-transparent border-b border-transparent"
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center py-2">
+
           {/* Logo */}
           <div className="flex-shrink-0">
             <img
               src={logoImage}
               alt="Camforge Technologies"
-              className="h-20 w-auto transition-all duration-300 hover:scale-105"
+              className="h-14 w-auto transition-transform duration-200 hover:scale-105"
             />
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
-              {navLinks.map((link) => (
-                <button
-                  key={link.href}
-                  onClick={() => scrollToSection(link.href)}
-                  className="text-gray-600 hover:text-primary transition-colors duration-200 font-medium"
-                >
-                  {link.label}
-                </button>
-              ))}
-              <Button
-                onClick={() => scrollToSection("contact")}
-                className="bg-primary text-white hover:bg-red-700 transition-colors duration-200 font-medium"
+          {/* Desktop nav */}
+          <div className="hidden md:flex items-center gap-1">
+            {navLinks.map((link) => (
+              <button
+                key={link.href}
+                onClick={() => scrollToSection(link.href)}
+                className={`relative px-4 py-2 transition-colors duration-200 font-medium text-sm tracking-wide group ${
+                  isScrolled
+                    ? "text-[#1d1d1f] hover:text-primary"
+                    : "text-white/90 hover:text-white"
+                }`}
               >
-                Contact
-              </Button>
-            </div>
+                {link.label}
+                <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-primary rounded-full transition-all duration-300 group-hover:w-4/5" />
+              </button>
+            ))}
+            <Button
+              onClick={() => scrollToSection("contact")}
+              className="ml-3 btn-premium text-white border-0 font-semibold px-6 rounded-xl"
+            >
+              Contact Us
+            </Button>
           </div>
 
-          {/* Mobile menu button */}
+          {/* Mobile menu */}
           <div className="md:hidden">
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon">
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className={isScrolled ? "text-[#1d1d1f] hover:bg-black/5" : "text-white hover:bg-white/10"}
+                >
                   <Menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-                <div className="flex flex-col space-y-6 mt-8">
+              <SheetContent side="right" className="w-[300px] bg-white/90 backdrop-blur-xl border-black/10">
+                <div className="flex flex-col space-y-1 mt-10">
                   {navLinks.map((link) => (
                     <button
                       key={link.href}
                       onClick={() => scrollToSection(link.href)}
-                      className="text-left text-lg font-medium text-gray-600 hover:text-primary transition-colors"
+                      className="text-left px-4 py-3 text-base font-medium text-[#1d1d1f] hover:text-primary hover:bg-black/[0.04] rounded-xl transition-all"
                     >
                       {link.label}
                     </button>
                   ))}
-                  <Button
-                    onClick={() => scrollToSection("contact")}
-                    className="bg-primary text-white hover:bg-red-700 w-full"
-                  >
-                    Contact
-                  </Button>
+                  <div className="pt-4">
+                    <Button
+                      onClick={() => scrollToSection("contact")}
+                      className="btn-premium text-white border-0 w-full rounded-xl"
+                    >
+                      Contact Us
+                    </Button>
+                  </div>
                 </div>
               </SheetContent>
             </Sheet>
           </div>
+
         </div>
       </div>
     </nav>

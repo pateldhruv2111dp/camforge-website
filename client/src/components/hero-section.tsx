@@ -1,66 +1,69 @@
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Phone } from "lucide-react";
-import heroBackgroundImage from "@assets/79b20d9a-ebc6-4315-a09a-600b385ceeb7_1750943385982.png";
+import { ChevronDown } from "lucide-react";
+import mastercamLogo from "@assets/mastercam-logo-white.png";
 
 export default function HeroSection() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+    if (element) element.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <section
       id="home"
       className="relative min-h-screen flex items-center"
-      style={{
-        backgroundImage: `url(${heroBackgroundImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
+      style={{ zIndex: 1 }}
     >
-      {/* Background overlay */}
-      <div className="absolute inset-0 bg-black/60"></div>
-      <div className="absolute inset-0 bg-gradient-to-r from-secondary/5 to-transparent"></div>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex justify-center items-center min-h-screen">
-        <div className="max-w-4xl animate-fade-in text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight">
-            <div className="text-center">
-              Precision <span className="text-primary">CAD/CAM</span> Solutions
-            </div>
-            <div className="text-center my-2">
-              &
-            </div>
-            <div className="text-center">
-              Industrial Training Institute
-            </div>
+      {/* ── Background video — fixed so it stays while page scrolls ── */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="fixed inset-0 w-full h-full object-cover"
+        style={{ zIndex: 0 }}
+      >
+        <source src="/hero-video.mp4" type="video/mp4" />
+      </video>
+
+      {/* Light top overlay so video is clear; stronger scrim at the bottom for text legibility */}
+      <div className="absolute inset-0 bg-black/30" style={{ zIndex: 1 }} />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/80" style={{ zIndex: 1 }} />
+
+
+      {/* All content pinned to the bottom of the hero */}
+      <div
+        className="absolute bottom-0 left-0 right-0 flex justify-center"
+        style={{ zIndex: 2 }}
+      >
+        <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center gap-2 pb-8 md:pb-16">
+
+          {/* Mastercam Channel Partner India logo */}
+          <img
+            src={mastercamLogo}
+            alt="Mastercam Channel Partner India"
+            className="h-14 md:h-24 w-auto object-contain"
+          />
+
+          {/* Heading */}
+          <h1 className="text-xl md:text-4xl font-bold text-white leading-tight tracking-tight">
+            Precision <span className="text-gradient-red">CAD/CAM</span> Solutions &amp; Industrial Training
           </h1>
-          <p className="text-xl md:text-2xl text-gray-200 mb-6 leading-relaxed">
-            Empowering industries with cutting-edge <span className="text-primary">CAD/CAM</span> programming services,
-            authorized training, and comprehensive solutions for modern
-            manufacturing.
+
+          {/* Subtext */}
+          <p className="text-sm md:text-lg text-white/75 leading-relaxed max-w-2xl">
+            Empowering industries with cutting-edge{" "}
+            <span className="text-primary font-semibold">CAD/CAM</span> programming,
+            authorized training &amp; solutions for modern manufacturing.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              onClick={() => scrollToSection("services")}
-              className="bg-primary text-white hover:bg-red-700 transition-all duration-300 font-semibold text-lg group"
-            >
-              Explore Services
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              onClick={() => scrollToSection("contact")}
-              className="border-2 border-white bg-white text-secondary hover:bg-gray-100 hover:text-secondary transition-all duration-300 font-semibold text-lg"
-            >
-              Get in Touch
-              <Phone className="ml-2 h-5 w-5" />
-            </Button>
-          </div>
+
+          {/* Scroll chevron */}
+          <button
+            onClick={() => scrollToSection("about")}
+            className="text-white/30 hover:text-white/60 transition-colors animate-bounce mt-1"
+          >
+            <ChevronDown className="w-5 h-5" />
+          </button>
+
         </div>
       </div>
     </section>
