@@ -1,7 +1,20 @@
+import { useRef, useEffect } from "react";
 import { ChevronDown } from "lucide-react";
 import mastercamLogo from "@assets/mastercam-logo-white.png";
 
 export default function HeroSection() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+    // Force-play on mobile where autoplay may be blocked
+    video.muted = true;
+    video.play().catch(() => {
+      // If still blocked (e.g. low-power mode), silently ignore
+    });
+  }, []);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) element.scrollIntoView({ behavior: "smooth" });
@@ -15,12 +28,15 @@ export default function HeroSection() {
     >
       {/* ── Background video — fixed so it stays while page scrolls ── */}
       <video
+        ref={videoRef}
         autoPlay
         muted
         loop
         playsInline
+        disablePictureInPicture
+        disableRemotePlayback
         className="fixed inset-0 w-full h-full object-cover"
-        style={{ zIndex: 0 }}
+        style={{ zIndex: 0, pointerEvents: "none" }}
       >
         <source src={`${import.meta.env.BASE_URL}hero-video.mp4`} type="video/mp4" />
       </video>
