@@ -9,6 +9,7 @@ export default defineConfig({
   plugins: [
     react(),
   ],
+  base: "/camforge-website/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "client", "src"),
