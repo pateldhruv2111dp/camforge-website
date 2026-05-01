@@ -55,7 +55,7 @@ export default function Navigation() {
               <button
                 key={link.href}
                 onClick={() => scrollToSection(link.href)}
-                className={`relative px-4 py-2 transition-colors duration-200 font-medium text-sm tracking-wide group ${
+                className={`relative px-4 py-2 transition-colors duration-200 font-medium text-base tracking-wide group ${
                   isScrolled
                     ? "text-[#1d1d1f] hover:text-primary"
                     : "text-white/90 hover:text-white"

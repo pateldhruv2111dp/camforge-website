@@ -21,7 +21,7 @@ export default function AuthorizedReseller() {
     <section className="py-24 section-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-slide-up">
-          <p className="text-primary font-semibold tracking-widest text-xs uppercase mb-3">
+          <p className="text-primary font-semibold tracking-widest text-sm uppercase mb-3">
             Official Partnerships
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-[#1d1d1f] mb-4 tracking-tight">
@@ -49,13 +49,13 @@ export default function AuthorizedReseller() {
                 />
               </div>
               <h4 className="text-xl font-bold text-[#1d1d1f] mb-1">{partner.name}</h4>
-              <p className="text-[#6e6e73] text-sm mb-5">{partner.role}</p>
+              <p className="text-[#6e6e73] text-base mb-5">{partner.role}</p>
 
               <div className="h-px bg-black/[0.06] mb-5" />
 
               <ul className="space-y-3">
                 {partner.perks.map((perk, i) => (
-                  <li key={i} className="flex items-center justify-center gap-2 text-sm text-[#1d1d1f]">
+                  <li key={i} className="flex items-center justify-center gap-2 text-base text-[#1d1d1f]">
                     <span className="w-5 h-5 rounded-full bg-primary/10 border border-primary/25 flex items-center justify-center text-primary text-[10px] font-bold flex-shrink-0">
                       ✓
                     </span>

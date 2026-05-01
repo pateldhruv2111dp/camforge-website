@@ -36,22 +36,22 @@ export default function Footer() {
               alt="Camforge Technologies"
               className="h-14 w-auto mb-5"
             />
-            <p className="text-[#6e6e73] leading-relaxed text-sm max-w-sm mb-6">
+            <p className="text-[#6e6e73] leading-relaxed text-base max-w-sm mb-6">
               Leading provider of <span className="text-primary">CAD/CAM</span> solutions,
               programming services, and authorized training programs for modern
               manufacturing industries.
             </p>
-            <div className="space-y-2">
+            <div className="space-y-3">
               <a
                 href="mailto:support@camforge.in"
-                className="flex items-center gap-2 text-[#6e6e73] hover:text-primary text-sm transition-colors"
+                className="flex items-center gap-2 text-[#6e6e73] hover:text-primary text-base transition-colors"
               >
                 <Mail className="w-4 h-4 text-primary flex-shrink-0" />
                 support@camforge.in
               </a>
               <a
                 href="tel:+919825060415"
-                className="flex items-center gap-2 text-[#6e6e73] hover:text-primary text-sm transition-colors"
+                className="flex items-center gap-2 text-[#6e6e73] hover:text-primary text-base transition-colors"
               >
                 <Phone className="w-4 h-4 text-primary flex-shrink-0" />
                 +91 9825060415
@@ -61,7 +61,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-[#1d1d1f] font-semibold mb-5 text-sm tracking-widest uppercase">
+            <h4 className="text-[#1d1d1f] font-semibold mb-5 text-base tracking-widest uppercase">
               Quick Links
             </h4>
             <ul className="space-y-3">
@@ -69,7 +69,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <button
                     onClick={() => scrollToSection(link.href)}
-                    className="text-[#6e6e73] hover:text-primary transition-colors text-sm text-left"
+                    className="text-[#6e6e73] hover:text-primary transition-colors text-base text-left"
                   >
                     {link.label}
                   </button>
@@ -80,12 +80,12 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="text-[#1d1d1f] font-semibold mb-5 text-sm tracking-widest uppercase">
+            <h4 className="text-[#1d1d1f] font-semibold mb-5 text-base tracking-widest uppercase">
               Services
             </h4>
             <ul className="space-y-3">
               {services.map((s, i) => (
-                <li key={i} className="text-[#6e6e73] text-sm">
+                <li key={i} className="text-[#6e6e73] text-base">
                   {s.prefix ? (
                     <>
                       <span className="text-primary">{s.prefix}</span>
@@ -102,10 +102,10 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="h-px bg-black/[0.08]" />
         <div className="py-5 flex flex-col sm:flex-row justify-between items-center gap-2">
-          <p className="text-[#6e6e73] text-sm">
+          <p className="text-[#6e6e73] text-base">
             © 2025 Camforge Technologies India Pvt. Ltd. All rights reserved.
           </p>
-          <p className="text-[#aeaeb2] text-xs">Powered by Camforge Technologies</p>
+          <p className="text-[#aeaeb2] text-sm">Powered by Camforge Technologies</p>
         </div>
 
       </div>
