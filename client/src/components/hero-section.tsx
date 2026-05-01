@@ -22,7 +22,7 @@ export default function HeroSection() {
         className="fixed inset-0 w-full h-full object-cover"
         style={{ zIndex: 0 }}
       >
-        <source src="/hero-video.mp4" type="video/mp4" />
+        <source src={`${import.meta.env.BASE_URL}hero-video.mp4`} type="video/mp4" />
       </video>
 
       {/* Light top overlay so video is clear; stronger scrim at the bottom for text legibility */}
